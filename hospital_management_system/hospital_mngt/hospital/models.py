@@ -3,14 +3,14 @@ from django.db import models
 # Create your models here.
 
 class Doctor(models.Model):
-    Name = models.chharField(max_length=50)
-    mobile = models.InregerField()
-    special = models.Chsarfield(max_length=50)
+    Name = models.CharField(max_length=50)
+    mobile = models.IntegerField()
+    special = models.CharField(max_length=50)
 
 
 
 class patient(models.Model):
-    name = models.Charfield(max_length=50)
+    name = models.CharField(max_length=50)
     gender = models.CharField(max_length=10)
     mobile = models.IntegerField(null=True)
     address = models.TextField()
